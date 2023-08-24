@@ -46,6 +46,7 @@ Esse endpoint lista todas as contas bancárias existentes.
 
     -   senha_banco
 
+<center><img   src=".\prints Insomnia\listar contas.png"/></center>
 
 ### Criar conta bancária
 
@@ -63,6 +64,7 @@ Esse endpoint cria uma conta bancária, onde será gerado um número único para
     -   email
     -   senha
 
+<center><img src=".\prints Insomnia\abrir conta bancária.png"/></center>
 
 ### Atualizar usuário da conta bancária
 
@@ -80,6 +82,7 @@ Esse endpoint atualiza apenas os dados do usuário de uma conta bancária.
     -   email
     -   senha
 
+<center><img   src=".\prints Insomnia\alterar dados conta bancária.png"/></center>
 
 ### Excluir Conta
 
@@ -91,6 +94,7 @@ Esse endpoint exclui uma conta bancária existente.
 
     -   Numero da conta bancária 
 
+<center><img   src=".\prints Insomnia\excluir conta bancária.png"/></center>
 
 ### Depositar
 
@@ -103,6 +107,7 @@ Esse endpoint soma o valor do depósito ao saldo de uma conta válida e registra
     -   numero_conta
     -   valor
 
+<center><img   src=".\prints Insomnia\efetuar depósito.png"/></center>
 
 ### Sacar
 
@@ -116,6 +121,7 @@ Esse endpoint realiza o saque de um valor em uma determinada conta bancária e r
     -   valor
     -   senha
 
+<center><img   src=".\prints Insomnia\efetuar saque.png"/></center>
 
 ### Tranferir
 
@@ -130,6 +136,8 @@ Esse endpoint permite a transferência de recursos (dinheiro) de uma conta banc�
     -   valor
     -   senha
 
+<center><img   src=".\prints Insomnia\efetuar transferências.png"/></center>
+
 ### Saldo
 
 #### `GET` `/contas/saldo?numero_conta=123&senha=123`
@@ -141,6 +149,7 @@ Esse endpoint retorna o saldo de uma conta bancária.
     -   numero_conta
     -   senha
 
+<center><img   src=".\prints Insomnia\consultar saldo.png"/></center>
 
 ### Extrato
 
@@ -152,5 +161,7 @@ Esse endpoint lista as transações realizadas de uma conta específica.
 
     -   numero_conta
     -   senha
+
+<center><img   src=".\prints Insomnia\consultar extrato.png"/></center>
 
 ###### tags: `back-end` `módulo 2` `nodeJS` `API REST` `desafio`
