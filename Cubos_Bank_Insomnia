@@ -1,0 +1,287 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2023-08-24T01:52:31.026Z",
+    "__export_source": "insomnia.desktop.app:v2023.4.0",
+    "resources": [
+        {
+            "_id": "req_9dd5abc4cef34cd69f5eddf3f777fa90",
+            "parentId": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "modified": 1692841401653,
+            "created": 1692137255211,
+            "url": "http://localhost:8000/contas/1/usuario",
+            "name": "altera todas propriedades de uma conta bancária",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n    \"nome\": \"Renata\",\n    \"cpf\": \"45678912345\",\n    \"data_nascimento\": \"1983-05-30\",\n    \"telefone\": \"13999998888\",\n    \"email\": \"renata@cubos.com\",\n    \"senha\": \"12345\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1692100199002.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "parentId": null,
+            "modified": 1692810608218,
+            "created": 1692063160872,
+            "name": "API Cubos Bank",
+            "description": "Rotas para teste do CRUD da API Cubos Bank",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_73f18b954cd84896b332ae2bbc5c396f",
+            "parentId": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "modified": 1692841044554,
+            "created": 1692063248140,
+            "url": "http://localhost:8000/contas/1",
+            "name": "exclui conta bancária por id",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1692063248140,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_86d86562d8c7402281e1666d005549e5",
+            "parentId": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "modified": 1692841379782,
+            "created": 1692063218869,
+            "url": "http://localhost:8000/contas",
+            "name": "abre conta",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n    \"nome\": \"Igor\",\n    \"cpf\": \"12345678912\",\n    \"data_nascimento\": \"2014-08-01\",\n    \"telefone\": \"13999998888\",\n    \"email\": \"igor@gamer.com\",\n    \"senha\": \"12345\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1692063218869,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4563b80dc5f74af0a40f91b109008cbe",
+            "parentId": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "modified": 1692841607544,
+            "created": 1692329131111,
+            "url": "http://localhost:8000/transacoes/depositar",
+            "name": "realiza deposito",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"numero_conta\": \"1\",\n\t\"valor\": 10000\n\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1692063192630,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_85cd9055f1ca4c66a9845b08d09b207b",
+            "parentId": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "modified": 1692841612316,
+            "created": 1692333017634,
+            "url": "http://localhost:8000/transacoes/sacar",
+            "name": "realiza saque",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"numero_conta\": \"1\",\n\t\"valor\": 10000,\n  \"senha\": \"12345\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1692063179510.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_25e22ab585d34d4da149138497a71569",
+            "parentId": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "modified": 1692841448074,
+            "created": 1692334771835,
+            "url": "http://localhost:8000/transacoes/transferir",
+            "name": "realiza transferencia",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"numero_conta_origem\": \"1\",\n\t\"numero_conta_destino\": \"2\",\n\t\"valor\": 10000,\n\t\"senha\": \"12345\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1692063172950.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_81d4167ad84b4e6e8ae821ebea37c8e8",
+            "parentId": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "modified": 1692841458917,
+            "created": 1692063166391,
+            "url": "http://localhost:8000/contas/saldo?numero_conta=1&senha=12345",
+            "name": "consulta saldo",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1692063166391,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_c5a051035c7e4e57babe37321b9be21e",
+            "parentId": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "modified": 1692841464058,
+            "created": 1692338181196,
+            "url": "http://localhost:8000/contas/extrato?numero_conta=1&senha=12345",
+            "name": "consulta extrato",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1691992404229.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_bf7c8fd6dcc84a78a343dbebd836c2ff",
+            "parentId": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "modified": 1692818417280,
+            "created": 1692063214279,
+            "url": "http://localhost:8000/contas?senha_banco=Cubos123Bank",
+            "name": "lista todas as contas",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1691921642068.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_74445169d92789c3dd954397d239b03b2e0a2cfd",
+            "parentId": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "modified": 1692063160876,
+            "created": 1692063160876,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1692063160876,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_74445169d92789c3dd954397d239b03b2e0a2cfd",
+            "parentId": "wrk_f9e5a6db74f84f66b181191a19f87725",
+            "modified": 1692063160877,
+            "created": 1692063160877,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        }
+    ]
+}
