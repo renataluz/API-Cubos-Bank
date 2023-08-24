@@ -4,6 +4,8 @@
 
 Este projeto foi criado para conclusão do módulo 02 do curso intensivo de Back-end da [Cubos Academy](https://cubos.academy/).
 
+O escopo do projeto é criar uma RESTful API (CRUD) que persista em memória, utilizando o framework Express, conforme requisitos abaixo:
+
 -   Criar contas bancárias
 -   Listar contas bancárias
 -   Atualizar os dados do usuário da conta bancária
